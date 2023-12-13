@@ -24,7 +24,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                bat "${env.SAG_HOME}/common/AssetBuildEnvironment/bin/build.bat -Dbuild.source.dir=C/:/ProgramData/Jenkins/.jenkins/workspace/${env.JOB_NAME}/assets/IS/Packages"
+                bat "${env.SAG_HOME}/common/AssetBuildEnvironment/bin/build.bat -Dbuild.source.dir=C/:/ProgramData/Jenkins/.jenkins/workspace/samplePipeline/assets/IS/Packages"
             }
         }
         stage('Deploy') {
